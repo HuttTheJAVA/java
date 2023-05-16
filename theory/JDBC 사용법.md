@@ -28,4 +28,5 @@ DRIVER들을 관리하는 DRIVER 매니저가 있는데 자바 개발자가 DBMS
 
 6.데이터 베이스 연결을 종료.<br></br><br></br>
 
-![image](https://github.com/HuttTheJAVA/java/assets/92637789/65f388fd-ec96-4867-96e6-8c8910e749e7)
+ <p align = "center"><img src = "https://github.com/HuttTheJAVA/java/assets/92637789/65f388fd-ec96-4867-96e6-8c8910e749e7" height = 480x weight = 500x></p>
+(JDBC를 잘 표현한 그림인 거 같아서 넣어봤다.)
