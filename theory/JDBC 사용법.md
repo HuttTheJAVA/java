@@ -24,9 +24,8 @@ DRIVER들을 관리하는 DRIVER 매니저가 있는데 자바 개발자가 DBMS
 
 4. SQL 질의문을 실행한다.<br></br> Statement나 PreparedStatement를 사용해서 쿼리문을 실행한다.
 
-5. 결과를 처리한다.<br></br> 리턴 값이 있는 SQL문이면 (예를 들어 SELECT) ResultSet 인터페이스 변수를 이용한다.
+5. 결과를 처리한다.<br></br> 리턴 값이 있는 SQL문이면 (예를 들어 SELECT) ResultSet 인터페이스 변수를 이용한다.   
+6. 데이터 베이스 연결을 종료.<br></br><br></br>
 
-6.데이터 베이스 연결을 종료.<br></br><br></br>
-
- <p align = "center"><img src = "https://github.com/HuttTheJAVA/java/assets/92637789/65f388fd-ec96-4867-96e6-8c8910e749e7" height = 480x weight = 500x></p>
+ <p align = "center"><img src = "https://github.com/HuttTheJAVA/java/assets/92637789/65f388fd-ec96-4867-96e6-8c8910e749e7" height = 480x weight = 500x></p><br></br>
 (JDBC를 잘 표현한 그림인 거 같아서 넣어봤다.)
