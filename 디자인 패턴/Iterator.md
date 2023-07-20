@@ -10,7 +10,8 @@
 이 메소드는 Iterator를 리턴 타입으로 가진다. 즉 이 메소드를 실행하면 Iterator를 리턴(생성)받는다.
 이렇게 추상화된 메소드는 Aggregate를 implement하는 ConcreteAggregate에서 구현한다. 쉽게 말하자면 ConcreteAggregate는 탐색의 대상이 되는 자료구조이고, 탐색이 되는 자료구조는 저마다 자기를 탐색해줄 반복자를 생성하는 메소드를 구현해야 한다.(반복자를 구현하는 것이 아니고 반복자를 생성하는 메소드를 구현하는 것이다. 반복자 구현은 ConcreteIterator에서 할 일이다.)
 ### ConcreteAggregate(구체적 집합체) - 클래스
-> ConcreteAggregate는 Aggregate에서 추상적으로 명시한 반복자 생성 메소드를 구현한다. 이 메소드 안에서 ConcreteIterator를 생성하고 리턴한다.
+> ConcreteAggregate는 Aggregate에서 추상적으로 명시한 반복자 생성 메소드를 구현한다. 이 메소드 안에서 ConcreteIterator를 생성하고 리턴한다 (여기서 리턴 타입이 중요한데
+> 리턴 타입을 ConcreteIterator로 하는 것이 아닌 Iterator로 하는 것이다. 이렇게 함으로써 나중에 ConcreteIterator를 바꾸고 싶을 때 그냥 쉽게 ConcreteIterator를 생성하는 new 연산자 부분을 바꿔주기만 하면 된다.)
 ### Iterator(반복자) - 인터페이스
 > 반복자가 제공해야할 메소드들을 추상적으로 정의한 인터페이스 보통 hasNext()와 next()를 추상 메소드로 가진다.
 ### ConcreteIterator(구체적 반복자) - 클래스
