@@ -16,6 +16,10 @@
 > 반복자가 제공해야할 메소드들을 추상적으로 정의한 인터페이스 보통 hasNext()와 next()를 추상 메소드로 가진다.
 ### ConcreteIterator(구체적 반복자) - 클래스
 > Iterator 인터페이스를 구현한 것으로 ConcreteIterator별로 다르게 구현할 수 있다. 서로 다른 자료구조에 대한 ConcreteIterator를 그 자료구조 특성에 맞게 Iterator의 추상 메소드들을 구현할 수 있다.
+
+### Main - 클래스
+> main 함수가 있는 클래스 이 함수에서는 ConcreteAggregate를 생성하고 ConcreteAggregate의 ConcreteIterator를 생성하는 코드에서 바인딩하는 리턴 타입을 Iterator로 해야한다. 그래야 나중에 ConcreteIterator가 바뀌어도 변수의 타입이 Iterator이고 이 Iterator는 추상화된 메소드를 호출하고 호출되는 메소드는 그 변수의 실체 타입에 따른 오버라이딩 된 메소드가 호출된다.
+ 
 <br></br>
 
 생각정리
